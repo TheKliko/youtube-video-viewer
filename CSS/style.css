@@ -1,0 +1,194 @@
+:root {
+    --min-width: ;
+
+    --primary-color: #cc0037;
+
+    --main-font: 'Monsterrat';
+    --main-text-color: #2c2c2c;
+    --main-text-color: #fff;
+
+    --gap-small: 8px;
+    --gap-medium: 16px;
+    --gap-large: 32px;
+
+    --button-color: var(--primary-color);
+    --button-color-hover: #d61246;
+    --button-border: solid 3px var(--button-color);
+    --button-border-hover: solid 3px var(--button-color-hover);
+    --button-padding: 12px;
+    --button-border-radius: 10px;
+
+    --background-overlay: rgba(0,0,0,0.35);
+    /* --background-image: url('../Images/backgrounds/edgerunners.jpg'); */
+    /* --background-image: url('https://c4.wallpaperflare.com/wallpaper/261/605/242/cyberpunk-2077-cyberpunk-edgerunners-david-martinez-edgerunners-lucy-edgerunners-hd-wallpaper-preview.jpg'); */
+    /* --background-image: url('https://i.pximg.net/img-master/img/2022/10/04/22/31/32/101688803_p0_master1200.jpg'); */
+    /* --background-image: linear-gradient(15deg, #990000, #ff0080); */
+    --background-image: url('../Images/backgrounds/katanawoman.png');
+
+    --section-width: max-content;
+    --section-height: max-content;
+    --section-background: rgba(0,0,0,0);
+    --section-text: var(--text-color);
+    --section-padding: 24px;
+    --section-border-radius: 10px;
+    --section-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    --input-padding: 12px;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../Fonts/Jura/Jura-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Monsterrat';
+    src: url('../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+body:before {
+    content: "";
+    background: var(--background-overlay);
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-medium);
+
+    width: 100vw;
+    height: 100vh;
+
+    min-width: max-content;
+    min-height: max-content;
+}
+
+#input-box {
+    width: var(--section-width);
+    height: var(--section-height);
+
+    background: var(--section-background);
+    padding: var(--section-padding);
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--section-box-shadow);
+
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.bold {
+    font-weight: 600;
+}
+.divider {
+    user-select: none;
+}
+img {
+    user-select: none;
+}
+br {
+    user-select: none;
+}
+
+a {
+    color: var(--main-text-color);
+}
+a:hover {
+    cursor: pointer;
+}
+a:visited {
+    color: var(--main-text-color);
+}
+
+
+
+
+.input {
+    width: var(--section-width);
+    min-width: 480px;
+    height: var(--section-height);
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    border: none;
+    padding: var(--input-padding);
+    text-align: center;
+    outline: none;
+}
+.input:focus {
+    background: none;
+}
+
+
+iframe {
+    width: 80%;
+    aspect-ratio: 16/9;
+    height: auto;
+
+
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--section-box-shadow);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+
+#load-video {
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--section-box-shadow);
+    border: none;
+    color: var(--text-color);
+    font-family: 'Monsterrat';
+    background: var(--button-color);
+    background: none;
+    backdrop-filter: blur(15px);
+}
+#load-video:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}

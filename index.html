@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Viewer</title>
+    <link rel="shortcut icon" href="Images/logo/youtube.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/main.js"></script>
+
+    <meta property="og:site_name" content="YouTube video viewer">
+    <meta property="og:title" content="Watch YouTube videos online.">
+    <meta property="og:url" content="https://thekliko.github.io/youtube-video-viewer">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+    <div style="display: flex; gap: var(--gap-medium);">
+        <input id="input-box" class="input" type="search" placeholder="insert the URL to a YouTube video">
+        <button id="load-video" onclick="update_iframe()">Load Video</button>
+    </div>
+
+    <iframe id="iframe" width="560" height="315" src="Images/backgrounds/youtube.txt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
