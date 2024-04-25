@@ -4,5 +4,6 @@ Instructions
 - click on <kbd>load video</kbd>
 
 Disclaimer
-Has some rendering issues
+Has some rendering issues: random lines appearing and discappearing when hovering over certain elements
+
 This is because I use `backdrop-filter: blur();` for the buttons
