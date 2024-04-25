@@ -5,8 +5,4 @@ Instructions
 
 Disclaimer
 Has some rendering issues
-This is because I use
-```css
-  backdrop-filter: blur();
-```
-for the buttons
+This is because I use `backdrop-filter: blur();` for the buttons
