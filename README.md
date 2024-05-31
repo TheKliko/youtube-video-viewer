@@ -12,6 +12,8 @@
 </ul>
 
 <h3>Disclaimer</h3>
-Has some rendering issues: random lines appearing and discappearing when hovering over certain elements
+Has some rendering issues: random lines appearing and discappearing when hovering over certain elements.
 
-This is because I use `backdrop-filter: blur();` for the buttons
+This is because I use `backdrop-filter: blur();` for the buttons.
+
+I will not change this.
